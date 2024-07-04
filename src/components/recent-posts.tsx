@@ -17,8 +17,11 @@ export async function RecentPosts() {
           <span className="mb-4 pr-4 text-right">Views</span>
           {posts.map((post, index) => (
             <Link href={post.url} key={index} className="col-span-2">
-              <Button variant="ghost" className="flex w-full justify-between">
-                <span>{post.title}</span>
+              <Button
+                variant="ghost"
+                className="flex w-full justify-between gap-4"
+              >
+                <span className="text-wrap text-start">{post.title}</span>
                 <span className="text-right">
                   {post.views.toLocaleString('en')}
                 </span>
