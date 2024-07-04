@@ -12,14 +12,14 @@ export function About() {
         About
       </h2>
       <div
-        className={`${!isExpanded ? 'max-h-screen' : 'max-h-[200px]'} overflow-hidden transition-[max-height]`}
+        className={`${isExpanded ? 'max-h-screen' : 'max-h-[200px]'} overflow-hidden transition-[max-height]`}
       >
         <Image
           src="/manu.png"
           alt="Profile picture"
           width={200}
           height={200}
-          className="float-end mb-4 ml-4 rounded-full"
+          className="float-end mb-4 ml-4 w-40 rounded-full"
         />
         <p>
           Hey, guys! How is it going? I am Manu Lopez Lorem ipsum dolor sit

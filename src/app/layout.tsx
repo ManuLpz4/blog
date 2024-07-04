@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`m-auto min-h-dvh max-w-screen-lg p-8 sm:px-0 sm:py-20 ${geistSans.variable} ${geistMono.variable}`}
+        className={`m-auto flex min-h-dvh max-w-screen-sm flex-col gap-8 p-8 sm:px-0 sm:py-20 ${geistSans.variable} ${geistMono.variable}`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Header />
