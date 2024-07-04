@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
 import { Footer } from '../components/footer'
+import { Header } from '../components/header'
 import { ThemeProvider } from '../components/theme-provider'
-import { ThemeToggle } from '../components/theme-toggle'
 import './globals.css'
 
 const geistSans = localFont({
@@ -27,13 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`m-auto min-h-dvh max-w-screen-lg p-8 sm:px-0 sm:py-20 ${geistSans.variable} ${geistMono.variable}`}
+      >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <ThemeToggle className="absolute right-4 top-4" />
-          <div className="m-auto flex min-h-dvh max-w-screen-lg flex-col gap-20 px-8 py-20">
-            {children}
-            <Footer />
-          </div>
+          <Header />
+          {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
