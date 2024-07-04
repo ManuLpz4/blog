@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
+import Footer from '../components/footer'
 import { ThemeProvider } from '../components/theme-provider'
 import { ThemeToggle } from '../components/theme-toggle'
 import './globals.css'
@@ -15,8 +16,8 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "Manu Lopez's Blog",
-  description: "The Manu Lopez's Blog",
+  title: "Manu Lopez's blog",
+  description: "The Manu Lopez's blog",
 }
 
 export default function RootLayout({
@@ -30,6 +31,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <ThemeToggle className="absolute top-4 right-4" />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
