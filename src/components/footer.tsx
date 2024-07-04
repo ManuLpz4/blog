@@ -3,13 +3,11 @@ import Link from 'next/link'
 
 import { cn } from '../utils/tailwind'
 
-export default function Footer({
-  className,
-}: Readonly<{ className?: string }>) {
+export function Footer({ className }: Readonly<{ className?: string }>) {
   return (
     <footer
       className={cn(
-        'row-start-3 flex gap-6 flex-wrap items-center justify-center',
+        'flex flex-wrap items-center justify-center gap-6',
         className
       )}
     >

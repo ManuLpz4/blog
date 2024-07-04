@@ -7,11 +7,10 @@ export async function RecentPosts() {
   const posts = await getPosts()
 
   return (
-    <>
+    <div>
       <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
         Recent posts
       </h2>
-
       {posts.length ? (
         <div className="grid grid-cols-2 gap-4">
           <div>Title</div>
@@ -28,6 +27,6 @@ export async function RecentPosts() {
       ) : (
         <p>There are no recent posts.</p>
       )}
-    </>
+    </div>
   )
 }
