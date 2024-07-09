@@ -12,9 +12,11 @@ export async function RecentPosts() {
         Recent posts
       </h2>
       {posts.length ? (
-        <div className="grid grid-cols-2">
-          <span className="pl-4">Title</span>
-          <span className="mb-4 pr-4 text-right">Views</span>
+        <div className="-mx-4 grid grid-cols-2">
+          <header className="col-span-2 mb-2 flex justify-between px-4 text-gray-500">
+            <span>Title</span>
+            <span className="text-right">Views</span>
+          </header>
           {posts.map((post, index) => (
             <Link href={post.url} key={index} className="col-span-2">
               <Button
