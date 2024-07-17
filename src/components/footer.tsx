@@ -22,7 +22,7 @@ export function Footer({ className }: Readonly<{ className?: string }>) {
       </Link>
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://github.com/ManuLpz4/web"
+        href="https://github.com/ManuLpz4/blog"
         target="_blank"
         rel="noopener noreferrer"
       >
