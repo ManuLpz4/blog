@@ -11,9 +11,7 @@ export function Header({ className }: Readonly<{ className?: string }>) {
           Manu Lopez
         </h1>
       </Link>
-      <div className="flex gap-2">
-        <ThemeToggle />
-      </div>
+      <ThemeToggle />
     </header>
   )
 }
