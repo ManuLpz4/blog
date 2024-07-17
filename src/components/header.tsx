@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import { cn } from '../utils/tailwind'
-import { LanguageToggle } from './language-toggle'
 import { ThemeToggle } from './theme-toggle'
 
 export function Header({ className }: Readonly<{ className?: string }>) {
@@ -13,7 +12,6 @@ export function Header({ className }: Readonly<{ className?: string }>) {
         </h1>
       </Link>
       <div className="flex gap-2">
-        <LanguageToggle />
         <ThemeToggle />
       </div>
     </header>
