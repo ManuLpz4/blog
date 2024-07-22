@@ -13,7 +13,7 @@ export function Footer({ className }: Readonly<{ className?: string }>) {
     >
       <Link
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="https://x.com/manulpz4"
+        href="https://x.com/intent/user?screen_name=manulpz4"
         target="_blank"
         rel="noopener noreferrer"
       >
